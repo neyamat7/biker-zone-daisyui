@@ -42,10 +42,10 @@
               poppins: ["Poppins", "serif"],
             },
             fontSize: {
-              "banner-header": "clamp(2rem, 6vw + 0.1rem, 4.5rem)",
+              "banner-header": "clamp(2rem, 5vw + 0.1rem, 3.75rem)",
             },
             lineHeight: {
-              "banner-header-leading": "clamp(2.8rem, 6vw + 0.8rem, 5.3rem)",
+              "banner-header-leading": "clamp(2.8rem, 5vw + 1rem, 4.6rem)",
             },
           },
         },
@@ -58,16 +58,115 @@
         .wrapper {
           max-width: 1170px;
           width: 100%;
-          margin-inline: 16px;
+          margin-inline: auto;
+          /* padding-inline: 16px; */
         }
       }
     </style>
+
+    <!-- <button class="btn bg-main-clr text-white py-4 px-8">
+                Login
+              </button> -->
   </head>
-  <body>
-    <div class="wrapper md:px-5">
-      <h1 class="text-banner-header leading-banner-header-leading capitalize">
-        initial set up html of structures and project files
-      </h1>
+  <body class="font-poppins">
+    <div class="wrapper md:px-5 lg:px-6">
+      <header>
+        <!-- navbar -->
+        <nav class="border border-red-500">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="lg:hidden border p-2 rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-medium"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a
+                class="text-xl sm:text-2xl font-extrabold whitespace-nowrap pl-2"
+                >Bike Dekho</a
+              >
+            </div>
+            <div class="navbar-end lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 text-base font-medium hidden lg:flex"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+
+              <button class="btn bg-main-clr text-white py-4 px-8">
+                Login
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class="h-[550px]">
+          <div class="carousel h-full w-full">
+            <div id="slide1" class="carousel-item relative w-full bg-banner-bg">
+              <!-- content -->
+              <div
+                class="border border-red-500 w-full flex flex-col md:flex-row justify-between"
+              >
+                <div class="flex-1 border border-red-500">
+                  <h1 class="text-banner-header font-bold">
+                    Ride-on R15 V4 <span><br /></span> with Smile
+                  </h1>
+
+                  <p class="text-base">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+
+                  <button class="btn bg-main-clr text-white py-4 px-8">
+                    Login
+                  </button>
+                </div>
+
+                <!-- banner image -->
+                <div class="flex-1 border border-red-500">
+                  <img src="images/slider/bike1.png" alt="" />
+                </div>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
     </div>
   </body>
 </html>
